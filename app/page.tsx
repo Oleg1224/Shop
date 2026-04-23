@@ -26,18 +26,18 @@ export default function Home() {
   //   getAllProducts()
   // }, [])
   useEffect(() => {
-    (async () => {
-      await getAllProducts()
-    })()
+    const func = () => getAllProducts()
+    func()
   }, [])
 
   return <div>
-    {arrProducts.map(item => {
+    sdlkfjsdlf
+    {/* {arrProducts.map(item => {
       return <div key={item.id}>
         <h2>{item.title}</h2>
         <p>{item.price}</p>
         <p>{item.describe}</p>
       </div>
-    })}
+    })} */}
   </div>
 }
